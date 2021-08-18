@@ -7,7 +7,6 @@ public class LoanCalcService {
      * @return
      */
     public static int createRequest() {
-        int LocalVar;
         // расчеты
         return LoanCalcRepository.save();
     }
