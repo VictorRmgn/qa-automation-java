@@ -6,9 +6,9 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
- * Unit test for simple App.
+ * Unit test for simple LoanCalcTest.
  */
-public class AppTest {
+public class LoanCalcTestTest {
     /**
      * Rigorous Test :-)
      */
