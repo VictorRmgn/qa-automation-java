@@ -1,5 +1,7 @@
 package com.tinkoff.edu.app;
 
+import static com.tinkoff.edu.app.LoanCalcRepository.save;
+
 public class LoanCalcService {
     /**
      * TODO Loan Calc
@@ -8,6 +10,6 @@ public class LoanCalcService {
      */
     public static int createRequest() {
         // расчеты
-        return LoanCalcRepository.save();
+        return save();
     }
 }

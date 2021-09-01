@@ -10,6 +10,7 @@ public class LoanCalcRepository {
      * @retern Request Id
      */
     public static int save() {
-        return ++requestId;
+        final int localVar = ++requestId;
+        return localVar;
     }
 }
