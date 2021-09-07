@@ -1,7 +1,7 @@
 package com.tinkoff.edu.app;
 
 public class LoanCalcRepository {
-    private static int requestId;
+    private int requestId;
 
     /**
      * TODO persist request
@@ -9,8 +9,7 @@ public class LoanCalcRepository {
      * @return
      * @retern Request Id
      */
-    public static int save() {
-        final int localVar = ++requestId;
-        return localVar;
+    public int save(LoanRequest request) {
+        return ++requestId;
     }
 }

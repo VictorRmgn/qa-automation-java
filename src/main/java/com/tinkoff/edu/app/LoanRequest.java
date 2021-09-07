@@ -4,22 +4,33 @@ package com.tinkoff.edu.app;
  * Class,Type > object,instanse
  */
 public class LoanRequest {
-    private int month;
-    private int amount;
+    private final LoanType type;
+    private final int months;
+    private final int amount;
 
-    public int getMonth() {
-        return month;
+    public LoanRequest(LoanType type, int months, int amount) {
+        this.type = type;
+        this.months = months;
+        this.amount = amount;
+
+
     }
 
-    public void setMonth(int month) {
-        this.month = month;
+    public int getMonths() {
+        return months;
     }
+
 
     public int getAmount() {
         return amount;
     }
 
-    public void setAmount(int amount) {
-        this.amount = amount;
+    public String toString() {
+        return "RQ: {"
+                + this.type + ", "
+                + this.getAmount()
+                + " for " + this.getMonths() +
+                "}";
     }
+
 }
