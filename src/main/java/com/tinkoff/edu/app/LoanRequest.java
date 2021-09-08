@@ -12,14 +12,11 @@ public class LoanRequest {
         this.type = type;
         this.months = months;
         this.amount = amount;
-
-
     }
 
     public int getMonths() {
         return months;
     }
-
 
     public int getAmount() {
         return amount;
@@ -32,5 +29,4 @@ public class LoanRequest {
                 + " for " + this.getMonths() +
                 "}";
     }
-
 }
