@@ -8,8 +8,6 @@ public class LoanCalcController {
      * TODO Validate and logs request
      */
     public int createRequest(LoanRequest request) {
-        //что то будет param validation
-        //log request
 
 
         return loanCalcService.createRequest(request);

@@ -10,7 +10,7 @@ public class LoanCalcService {
      * @return
      */
     public int createRequest(LoanRequest request) {
-        // расчеты if()
+
         return repo.save(request);
     }
 }

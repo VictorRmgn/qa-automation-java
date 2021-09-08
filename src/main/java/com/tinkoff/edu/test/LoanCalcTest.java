@@ -14,11 +14,9 @@ public class LoanCalcTest {
         LoanCalcController loanCalcController = new LoanCalcController();
 
         int requestId = loanCalcController.createRequest(request);
-        //int requestId=createRequest(new LoanRequest(10,2000));
-        //int requestId = createRequest();
 
-        System.out.println(request.toString());
-        System.out.println ("Request: " + request);
-        System.out.println(requestId + " mast be 1");
+        System.out.println(request);
+        System.out.println("Request: " + request);
+        System.out.println(requestId + " must be 1");
     }
 }
