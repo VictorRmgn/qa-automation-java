@@ -1,13 +1,16 @@
 package com.tinkoff.edu.app;
 
+
 public class LoanCalcService {
+    private LoanCalcRepository repo = new LoanCalcRepository();
+
     /**
      * TODO Loan Calc
      *
      * @return
      */
-    public static int createRequest() {
-        // расчеты
-        return LoanCalcRepository.save();
+    public int createRequest(LoanRequest request) {
+
+        return repo.save(request);
     }
 }
